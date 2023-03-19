@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box !important; 
+	scroll-behavior: smooth !important;
+	outline: transparent !important;
+} 
+
+
+html, body{
+	width: 100%; 
+	height: 100% !important; 
+	background: #f8f8f8;
+	transition-timing-function: ease-in-out; 
+	scroll-behavior: smooth; 
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale; 
+	text-rendering: optimizeLegibility; 
+	text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.4) !important; 
+	font-smooth: auto; -webkit-text-stroke: 0px;
+	scroll-padding: 0px;
+/*	overflow: hidden;*/
+}
+
+body{
+/*	height: fit-content;*/
+/*	overflow-y: scroll;*/
+}
+
+
+/* =========================
+	Common css properties
+========================== */
+* > h1,h2,h3,h4,h5,p,a,small{
+	text-decoration: none;
+	font-style: normal !important;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;*/
+	flex-wrap: wrap;
+}
+
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #eee;
+/*	background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);*/
+	text-align: center;
+	padding: 10px 2rem;
+	justify-content: center;
+	z-index: 999;
+	opacity: 1.0;
+/*	transition: 0.2s ease;*/
+}
+
+
+header h1{
+	border: none;
+/*	border: 1px solid #fff;*/
+	font-family: "Roboto", sans-serif; 
+	color: #333;
+	letter-spacing: 0.9px; 
+	padding: 0;
+	font-size: 40px;
+	margin: 0 0.5rem;
+	transition: 0.2s ease;
+}
+
+
+header h1 a{
+	color: #000;
+	font-weight: 500;
+/*	transition: 0.2s ease;*/
+}
+	
+header img{
+/*	border: 1px solid #fff;*/
+	width: 60px; 
+	height: 60px;
+	margin: 0 0.5rem;
+	transition: 0.2s ease;
+} 
+
+
+
+/* ===============================
+	fixed header
+=============================== */
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0rem;
+	z-index: 999;
+	transition: 0.3s ease;
+}
+
+header.fixed h1{
+	font-size: 35px;
+	color: #000;
+/*	transition: 0.2s ease;*/
+}
+
+header.fixed img{
+	width: 50px;
+	height: 50px;
+/*	transition: 0.2s ease;*/
+}
+
+
+/* =============================
+	main tag started
+============================= */
+main.wrapper {
+/*	border: 1px solid red;*/
+	width: 100%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7	) 0%, rgba(0, 0, 0, 0.7) 100%), url("./bg-img2.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+/*	padding: 2rem 0 1rem;*/
+	margin-top: 0;
+	overflow: auto;
+} 
+
+
+
+/* ================================
+	Main container starts
+================================ */
+
+.container {
+/*	border: 1px solid #fff;*/
+	width: 70%;
+	height: auto;
+/*	padding: 2rem 20px;*/
+	margin: 10rem auto;
+	overflow: auto;
+} 
+
+
+.container h2 {
+	font-family: "Roboto", sans-serif; 
+	color: #ddd; 
+	letter-spacing: 0.9px; 
+	padding: 5px;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+
+/* ============================
+	View Project BUttons
+============================ */
+
+.container a {
+/*	border: 0.5px solid rgba(0, 0, 0, 0.4);*/
+	border-radius: 20px;
+	font-family: "Raleway", sans-serif; 
+	color: #fff; 
+	background: dodgerblue;
+	font-size: 16px; 
+	font-weight: 500;
+	letter-spacing: 0.6px;
+	padding: 12px 10px;
+	display: inline-block;
+	margin-left: 3.5rem;
+	margin-top: 1rem;
+	text-decoration: none;
+	box-shadow: 0.5px 0.5px 2px #333;
+	transition: 0.3s ease;
+} 
+
+.container i {
+	color: orangered;
+} 
+
+.container a:hover {
+/*	box-shadow: 1px 1px 5px #222;*/
+	background: #eee;
+	color: #000;
+} 
+
+.container a:active {
+	background: #fff;
+}
+
+
+
+/* ================================
+	Horizontal line separator
+================================ */
+
+hr.separator {
+	border: none;
+	border: 0.2px solid rgba(255, 255, 255, 0.4);
+	width: 100%;
+	margin: 3rem 0 4rem;
+}
+
+
+
+/* ==============================
+	Footer CSS starts
+============================== */
+
+footer {
+	width: 100%;
+	height: auto;
+	padding: 0.4rem 1rem;
+	margin-top: auto;
+	text-align: center; 
+	font-family: 'Roboto', sans-serif; 
+/*	color: #000;*/
+/*	background: #ccc;*/
+	background: rgba(0, 0, 0, 0.2);
+}
+
+footer small {
+/*	color: rgba(255, 255, 255, 0.4); */
+	color: black;
+	display: block; 
+	padding: 10px; 
+	width: 100%; 
+	height: 100%; 
+	font-weight: 500;
+	letter-spacing: 0.6px;
+	line-height: 1.4;
+} 
+
+
+
+/* ================================
+	Primary Media Queries
+================================ */
+
+@media only screen and (min-width:0) and (max-width: 786px) {
+
+	header {
+	/*	position: sticky;*/
+	/*	top: 0;*/
+	/*	left: 0;*/
+		width: 100%;
+		height: auto; 
+		background: #eee;
+		text-align: center;
+		padding: 1rem 0 2.5rem;
+		position: relative;
+	}
+
+	header h1 {
+		border: none;
+	/*	border: 1px solid #fff;*/
+		font-family: "Roboto", sans-serif; 
+		color: #333;
+		font-weight: 400; 
+		letter-spacing: 0.9px; 
+		padding: 0;
+		font-size: 30px;
+		margin: 0;
+	}
+		
+	header img {
+	/*	border: 1px solid #fff;*/
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px; 
+		height: 80px;
+		margin: 0 0.5rem;
+	} 
+
+	.container {
+		margin-top: 4rem;
+		width: 95%;
+		text-align: center;
+	}
+
+	.container h2 {
+/*		border: 1px solid #fff;*/
+		padding: 0;
+	}
+}
+
+
+
+/* ====================================
+	Secondary Media Queries
+==================================== */
+
+@media only screen and (min-width:787px) and (max-width: 837px) {
+
+	header {
+	/*	position: sticky;*/
+	/*	top: 0;*/
+	/*	left: 0;*/
+		width: 100%;
+		height: auto; 
+		background: #eee;
+		text-align: center;
+		padding: 1rem 0 2.8rem;
+		position: relative;
+	}
+
+	header h1 {
+		border: none;
+/*		border: 1px solid blue;*/
+		font-family: "Roboto", sans-serif; 
+		color: #333;
+		font-weight: 400; 
+		letter-spacing: 0.9px; 
+		padding: 10px 0;
+		font-size: 40px;
+		margin: 0;
+	}
+
+	header img {
+	/*	border: 1px solid #fff;*/
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px; 
+		height: 80px;
+		margin: 0 0.5rem;
+	}
+
+	.fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 10px 0rem;
+		z-index: 999;
+		transition: 0.3s ease;
+	}
+
+	header.fixed h1{
+		font-size: 35px;
+		color: #000;
+	}
+
+	header.fixed img{
+		width: 50px;
+		height: 50px;
+	}
+
+}
+
+
+@media only screen and (min-width: 541px) and (max-width: 786px) {
+
+	.fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1.5rem 0rem;
+		z-index: 999;
+		transition: 0.3s ease;
+	}
+
+	header.fixed h1{
+		font-size: 35px;
+		color: #000;
+/*		padding: 10px 0;*/
+	}
+
+	header.fixed img{
+		width: 50px;
+		height: 50px;
+		margin-top: 0.8rem;
+		display: none;
+	}
+
+	.container a {
+		margin-left: 0;
+	}
+
+}
+
+
+/* ====================================
+	Small Screen Media Queries
+==================================== */
+
+@media only screen and (max-width: 540px){
+	
+	header {
+	/*	position: sticky;*/
+	/*	top: 0;*/
+	/*	left: 0;*/
+		width: 100%;
+		height: auto; 
+		background: #eee;
+	/*	background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);*/
+		text-align: center;
+		padding: 0 0 2.5rem;
+		position: relative;
+	}
+
+
+
+	header h1 {
+		border: none;
+/*		border: 1px solid #000;*/
+		font-family: "Roboto", sans-serif; 
+		color: #333;
+		font-weight: bold; 
+		letter-spacing: 0.9px; 
+		padding: 8px 0;
+		font-size: 34px;
+		margin: 0;
+	}
+
+	header img {
+	/*	border: 1px solid #fff;*/
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px; 
+		height: 80px;
+		margin: 0 0.5rem;
+	}
+
+	.container h2{
+		font-size: 28px;
+		line-height: 1.4;
+	}
+
+	.container a {
+		margin-left: 0;
+	}
+
+	footer small {
+		padding: auto 1rem;
+		width: 100%; 
+		height: 100%; 
+		font-weight: 500;
+		letter-spacing: 0.6px;
+		line-height: 1.4;
+	} 
+}

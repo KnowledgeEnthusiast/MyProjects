@@ -1,0 +1,49 @@
+Navigation position sticky/fixed
+================================
+=> https://www.youtube.com/watch?v=gT_jCeS9JBc (hussain sir)
+
+on mouse click events
+=====================
+=> https://www.w3schools.com/jsref/met_html_click.asp
+=> https://www.w3schools.com/jsref/event_onclick.asp
+
+
+Toggle Hide/Show (add class/remove class)
+==========================================
+=> https://www.w3schools.com/howto/howto_js_toggle_like.asp
+=> https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+=> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
+
+=> https://www.w3schools.com/jsref/prop_element_classlist.asp
+=> https://www.w3schools.com/jsref/prop_html_classname.asp
+
+Toggle Dark/Light mode (add class/remove class)
+================================================
+=> https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp (toggle/switch the dark mode)
+=> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode
+
+How to add Active class to currently selected element
+======================================================
+=> https://www.w3schools.com/howto/howto_js_active_element.asp
+=> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+
+How to show fullscreen preview
+===============================
+=> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_fullscreen
+=> https://www.w3schools.com/jsref/met_element_requestfullscreen.asp
+
+How to exit fullscreen preview
+===============================
+=> https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_requestfullscreen_exit (imp)
+=> https://www.w3schools.com/jsref/met_element_exitfullscreen.asp
+=> https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen
+
+How to create download link
+============================
+=> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_download_link
+
+
+
+How to create vertical separator line
+======================================
+=> https://www.w3schools.com/howto/howto_css_vertical_line.asp
