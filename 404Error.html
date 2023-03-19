@@ -22,6 +22,17 @@
 <meta rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 <!-- =============================
+	Fontawesome CDN links
+===============================-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/svg-with-js.min.css" integrity="sha512-iyaXtrpKz7FIRsICgrvVtq1vkSJT/cfLeXA0sHSQaAs0y3LdqXWlQCXTxM246mTQ/M2qpyVX3A0aRfmTt0LOCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/fontawesome.min.js" integrity="sha512-nKvEIGRKw2OQCR34yLfnWnvrOBxidLG9aK+vzsBxCZ/9ZxgcS4FrYcN+auWUTkCitTVZAt82InDKJ7x+QtKu6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- =============================
 	Google Fonts CDN Link 
 ===============================-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +40,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" />
 
 <style type="text/css">
+
+/* ============================
+	Importing Google Fonts
+============================= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
+
 	/* ===============================
 		Common css properties
 		implemented on all elements
@@ -74,61 +93,360 @@
 		text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
 	}
 
+
+		/* width */
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #ccc; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: green; 
+	}
+
+
 	/* =========================
 		main.wrapper
 	========================== */
 	main.wrapper {
 		width: 100%;
 		height: 100%;
+		overflow: auto;
 
-/*		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url("./404Error.jpg");*/
-		background-image: url("./404Error.jpg");
+		padding: 0 20px 20px;
+
+		background: rgba(0, 0, 0, 1.0);
+		background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url("./bg-img2.jpeg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-/*		background-attachment: fixed;*/
 		
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 
-	/* ===============================
-		anchor tag button inside of 
-		the main.wrapper 
-	=============================== */
-	.wrapper a {
 
+	.wrapper h1 {
+/*		border: 1px solid #fff;*/
+		display: block;
+		color: #ccc;
+		padding: 10px;
+		font-family: "Oswald", sans-serif;
+		font-weight: normal;
+		font-size: 50px;
+		letter-spacing: 5px;
+	}
+
+
+	/* =================================
+		conatiner section
+	================================= */
+	.container {
+		border: 0.5px solid rgba(255, 255, 255, 0.2);
+		border-radius: 8px;
+		
+		width: 60%;
+		height: 90%;
+		overflow-y: auto;
+		
+/*		padding: 20px 0;*/
+		text-align: center;
+
+		background: rgba(0, 0, 0, 0.6);
+/*		background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url("./bg-img2.jpeg");*/
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		/*display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;*/
+
+/*		overflow-Y: auto;*/
+		box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+	}
+
+	.container .title{
+/*		border: 1px solid #fff;*/
+		width: 100%;
+		height: auto;
+/*		margin: 1rem 0;*/
+		overflow-y: auto;
+	}
+
+	.container .title > * {
+		padding: 10px;
+		font-weight: normal;
+		color: #ccc;
+	}
+
+	.container .title h1{
+		text-align: center;
+		font-family: "Open sans", sans-serif;
+		font-weight: 500;
+		letter-spacing: 0.8px;
+		font-size: 50px;
+	}
+
+	.container .title p {
+		width: 80%;
+		margin: auto;
+		font-size: 20px;
+		color: #eee;
+		padding: 20px;
+/*		border: 1px solid #fff;*/
+	}
+
+	.container .title p, .container .title ol li {
+/*		text-align: center;*/
+		font-family: "Raleway", sans-serif;
+		font-weight: 300;
+		letter-spacing: 0.8px;
+		line-height: 1.4;
+	}
+
+	.container .title ol {
+/*		border: 1px solid #fff;*/
+		width: 100%;
+/*		height: 80%;*/
+		padding-left: 30px;
+		margin: 0;
+/*		overflow-y: auto;*/
+	}
+
+	.container .title ol li {
+/*		width: 100%;*/
+/*		padding: 20px;*/
+		font-family: "Raleway", sans-serif;
+		font-weight: 300;
+		letter-spacing: 0.8px;
+		font-size: 16px;
+		text-align: left;
+	}
+
+
+	/* =============================
+		Retun to main page button
+	============================= */
+	.container a{
 		border: 0.5px solid rgba(255, 255, 255, 0.2);
 		border-radius: 10px;
+
 		padding: 20px 40px;
-		margin-top: 30rem;
+		margin-top: 1rem;
+		
 		color: #eee;
+		
 		font-weight: 300;
 		letter-spacing: 0.6px;
 		font-family: "Raleway", sans-serif;
 		transition: 0.3s ease;
 		text-transform: capitalize;
-		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+		
+		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+		display: inline-block;
+
+		/*position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);*/
 	}
 
-	.wrapper a:hover{
+
+	.container a:hover{
 		background: rgba(255, 255, 255, 0.9);
 		box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
 		color: #000;
 		font-weight: 500;
 	}
 
-	.wrapper a:active{
+	.container a:active{
 		background: rgba(255, 255, 255, 0.4);
 /*		color: #fff;*/
 	}
+
+	.container img {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+
+
+	/* =====================================
+		Media Queries for Medium Device
+		screens
+	===================================== */
+	@media only screen and (min-width: 768px) and (max-width: 1144px) {
+
+		.container {
+			width: 70%;
+			text-align: center;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.container a {
+			display: block;
+			width: 50%;
+			height: auto;
+			text-align: center;
+/*			padding: 0;*/
+		}
+
+		.container .title {
+			margin: 1rem 0;
+		}
+	}
+
+	/* =====================================
+		Media Queries for Small Device
+		screens
+	===================================== */
+	@media only screen and (min-width: 529px) and (max-width: 767px) {
+
+		.container {
+			width: 80%;
+
+		}
+
+	}
+
+
+	/* =====================================
+		Media Queries for Small Device
+		screens
+	===================================== */
+	@media only screen and (min-width: 452px) and (max-width: 530px) {
+		
+		.container {
+			text-align: center;
+
+			display: ;
+		}
+
+		.container a {
+/*			display: block;*/
+/*			width: 60%;*/
+			height: auto;
+			text-align: center;
+/*			padding: 0;*/
+		}
+
+
+	}	
+
+
+	/* =====================================
+		Media Queries for Extra small 
+		Device screens
+	===================================== */
+	@media only screen and (min-width: 380px) and (max-width: 451px) {
+
+		.container a {
+			width: 95%;
+			padding: 20px 20px;
+		}		
+
+		.container img#img1 {
+			display: none;
+		}
+
+		.container img#img2 {
+			display: block;
+		}
+	}
+
+	@media only screen and (max-width: 530px) {
+
+		.container .title p {
+			width: 100%;
+			padding: 20px 10px;
+		}
+	}
+
+
+	/* =====================================
+		Media Queries for Extra small 
+		Device screens
+	===================================== */
+	@media only screen and (max-width: 379px) {
+
+		.wrapper {
+			padding: 20px;
+		}
+
+		.container {
+			width: 100%;
+		}
+
+		.container .title {
+/*			border: 1px solid #fff;*/
+		}
+
+		.container .title h1 {
+/*			border: 1px solid #fff;*/
+		}
+
+		.container .title p {
+/*			border: 1px solid #fff;*/
+			padding: 10px;
+		}
+
+		.container a {
+			width: 80%;
+			padding: 20px 20px;
+			margin-top: 1rem;
+		}
+
+		.container img#img1 {
+			display: none;
+		}
+
+		.container img#img2 {
+			display: block;
+		}
+	}
+
 </style>
 </head>
 <body>
 
 	<main class="wrapper">
-		<a href="index.html">return to main page</a>
+		<h1>Error 404 !</h1>
+
+		<div class="container">
+			<div class="title">
+				<!-- <h1>Error 404</h1> -->
+				<p>Sorry for the inconvenience, the url or webpage you are looking for is currently unavailable or cannot be reached at this moment due to following reasons:</p> 
+				<ol type="1">
+					<li>URL is broken or incorrect spelling.</li><br>
+					<li>The webpage is either currently undergoing through maintenance, or the page is under modifications and work in progress.</li><br> 
+					<li> Webpage has either been moved, renamed, deleted or there's no redirect setup.</li><br>
+					<li>The URL has been linked incorrectly by the owner/editor/author.</li><br>
+					<li>The Domain Server, or Database Server, or Web Hosting server is undergoing maintenance, or traffic overload, or miscellaneous malfunction.</li><br>
+					<li>The Domain Server, or Database Server, or Web Hosting server is witnessing traffic overload, or miscellaneous malfunction.</li>
+				</ol>
+			</div>
+			<!-- <img id="img1" src="404Error2.jpg" alt="Error-404-Page-Not-Found"> -->
+			<!-- <img id="img2" src="Error404PageMobile.png" alt="Error-404-Page-Not-Found"> -->
+			<a href="index.html">return to main page</a><br><br>
+		</div>
 	</main>
 
 </body>
