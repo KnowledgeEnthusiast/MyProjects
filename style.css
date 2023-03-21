@@ -118,6 +118,12 @@ header h1{
 }
 
 
+header h1 a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+
+
 header h1 a{
 	color: #000;
 	font-weight: 500;
@@ -325,7 +331,6 @@ header.fixed img{
 }
 
 
-
 .wrapper footer .social a:nth-child(1), .wrapper footer .social a:nth-child(2), .wrapper footer .social a:nth-child(6) {
 	color: royalblue;
 }
@@ -345,13 +350,18 @@ header.fixed img{
 
 
 .wrapper footer h4.contact {
+/*	border: 1px solid black;*/
+	width: auto;
+	margin: 10px auto;
 	font-weight: 300;
 	font-family: "Open sans", sans-serif;
 	padding: 10px;
 	line-height: 1.4;
 }
 
+
 .wrapper footer small {
+/*	border: 1px solid black;*/
 	display: block;
 	font-weight: 200;
 	letter-spacing: 0.8px;
