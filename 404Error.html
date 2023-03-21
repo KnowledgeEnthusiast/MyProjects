@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+
 <head>
+<!-- =============================
+	HTML DOM Title
+============================== -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, viewport-fit=cover" />
 <title>404 Error: Page not found</title>
@@ -39,507 +43,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" />
 
-<style type="text/css">
+<!-- ================================
+	External stylesheet
+================================= -->
+<link rel="stylesheet" type="text/css" href="Error404.css">
 
-/* ============================
-	Importing Google Fonts
-============================= */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
-
-	/* ===============================
-		Common css properties
-		implemented on all elements
-		in the html DOM.
-	=============================== */
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box !important; 
-		scroll-behavior: smooth !important;
-		outline: transparent !important;
-	}
-
-
-	/* ===============================
-		Common css properties
-		implemented on html DOM.
-	=============================== */
-	html, body {
-		width: 100%; 
-		height: 100%; 
-		background: #f8f8f8;
-		transition-timing-function: ease-in-out; 
-		scroll-behavior: smooth; 
-		-webkit-font-smoothing: antialiased; 
-		-moz-osx-font-smoothing: grayscale; 
-		text-rendering: optimizeLegibility; 
-		text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.4) !important; 
-		font-smooth: auto; -webkit-text-stroke: 0px;
-		scroll-padding: 0px;
-		overflow: auto;
-	}
-
-	body {
-		background: rgba(0, 0, 0, 1.0);
-		background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url("./bg-img2.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		overflow-y: auto;
-		text-align: center;
-	}
-
-
-
-	/* ======================================
-		Common css properties applied
-		on heading, paragraph and anchor
-		tags of the html DOM.
-	====================================== */
-	* > h1, h2, h3, h4, h5, p, a, small {
-		text-decoration: none;
-		font-style: normal !important;
-		font-family: 'Raleway', sans-serif;
-		text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
-	}
-
-
-
-	/* ==================================
-		Scrolbar styling
-	================================== */
-	::-webkit-scrollbar {
-	  width: 10px;
-	}
-
-	::-webkit-scrollbar-track {
-	  background: #ccc; 
-	}
-	 
-	::-webkit-scrollbar-thumb {
-	  background: #888; 
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-	  background: green; 
-	}
-
-
-
-	/* =========================
-		main.wrapper
-	========================== */
-	main.wrapper {
-		width: 100%;
-		height: auto;
-		overflow: auto;
-
-		padding: 0 20px 20px;
-
-		background: rgba(0, 0, 0, 1.0);
-		background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url("./bg-img2.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-
-	.wrapper h1 {
-/*		border: 1px solid #fff;*/
-		display: block;
-		color: #ccc;
-		padding: 10px;
-		font-family: "Oswald", sans-serif;
-		font-weight: normal;
-		font-size: 50px;
-		letter-spacing: 5px;
-	}
-
-
-	/* =================================
-		conatiner section
-	================================= */
-	.container {
-		border: 0.5px solid rgba(255, 255, 255, 0.2);
-		border-radius: 8px;
-		
-		width: 60%;
-		height: auto;
-
-		padding: 5px;
-		overflow-y: auto;
-		
-		padding-bottom: 1.5rem;
-		text-align: center;
-
-		background: rgba(0, 0, 0, 0.6);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-	}
-
-	.container .title{
-/*		border: 1px solid #fff;*/
-		width: 100%;
-		height: auto;
-/*		margin: 1rem 0;*/
-		overflow-y: auto;
-	}
-
-	.container .title h1{
-		text-align: center;
-		font-family: "Open sans", sans-serif;
-		font-weight: 500;
-		letter-spacing: 0.8px;
-		font-size: 50px;
-		color: #fff;
-	}
-
-	.container .title p {
-		width: 100%;
-		margin: auto;
-		font-size: 20px;
-		color: #eee;
-		padding: 20px;
-/*		border: 1px solid #fff;*/
-	}
-
-	.container .title p, .container .title ol li {
-/*		text-align: center;*/
-		font-family: "Raleway", sans-serif;
-		font-weight: 300;
-		letter-spacing: 0.6px;
-		line-height: 1.4;
-		color: #ccc;
-	}
-
-	.container .title ol {
-/*		border: 1px solid #fff;*/
-		width: 100%;
-/*		height: 80%;*/
-		margin-bottom: ;
-		padding-left: 30px;
-		margin-top: 1rem;
-		margin: 0;
-/*		overflow-y: auto;*/
-	}
-
-	.container .title ol li {
-/*		border: 1px solid #fff;*/
-/*		width: 100%;*/
-/*		padding: 20px;*/
-		font-family: "Raleway", sans-serif;
-		font-weight: 300;
-		letter-spacing: 0.8px;
-		font-size: 16px;
-		text-align: left;
-		margin: 10px 0;
-/*		display: block;*/
-	}
-
-
-	/* =============================
-		Retun to main page button
-	============================= */
-	.container a{
-		border: 0.5px solid rgba(255, 255, 255, 0.2);
-		border-radius: 10px;
-
-		padding: 20px 40px;
-		margin-top: 1rem;
-		
-		color: #eee;
-		
-		font-weight: 200;
-		letter-spacing: 0.8px;
-		font-family: "Raleway", sans-serif;
-		transition: 0.3s ease;
-		text-transform: capitalize;
-		
-		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-		display: inline-block;
-	}
-
-
-	.container a:hover{
-		background: rgba(255, 255, 255, 0.9);
-		box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
-		color: #000;
-		font-weight: 500;
-	}
-
-	.container a:active{
-		background: rgba(255, 255, 255, 0.4);
-/*		color: #fff;*/
-	}
-
-	.container img {
-		width: 100%;
-		height: 100%;
-		margin: auto;
-	}
-
-
-	/* =====================================
-		Media Queries for Medium Device
-		screens
-	===================================== */
-	@media only screen and (min-width: 768px) and (max-width: 1144px) {
-
-		.container {
-			width: 70%;
-			text-align: center;
-
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.container a {
-			display: block;
-			width: 50%;
-			height: auto;
-			text-align: center;
-/*			padding: 0;*/
-		}
-
-		.container .title {
-			margin: 1rem 0;
-		}
-	}
-
-	/* =====================================
-		Media Queries for Small Device
-		screens
-	===================================== */
-	@media only screen and (min-width: 529px) and (max-width: 767px) {
-
-		.container {
-			width: 100%;
-		}
-
-		.wrapper h1 {
-/*			border: 1px solid #fff;*/
-			text-align: center;
-		}
-
-		.container .title p {
-/*			border: 1px solid #fff;*/
-			width: 100%;
-		}
-
-		.container .title ol {
-/*			border: 1px solid #fff;*/
-			padding: 1rem 2rem;
-		}
-
-		.container .title ol li{
-/*			border: 1px solid #fff;*/
-			padding: 10px;
-		}		
-	}
-
-
-	/* =====================================
-		Media Queries for Small Device
-		screens
-	===================================== */
-	@media only screen and (min-width: 452px) and (max-width: 530px) {
-		
-		.container {
-			text-align: center;
-			width: 100%;
-		}
-
-		.wrapper h1 {
-			text-align: center;
-			font-size: 40px;
-		}
-
-		.container a {
-/*			display: block;*/
-/*			width: 60%;*/
-			height: auto;
-			text-align: center;
-/*			padding: 0;*/
-		}
-	}	
-
-
-	@media only screen and (max-width: 530px) {
-
-		.container .title p {
-			width: 100%;
-			padding: 20px 10px;
-		}
-
-		.container .title ol {
-/*			border: 1px solid #fff;*/
-			padding: 1rem 2rem;
-		}
-
-		.container .title ol li{
-/*			border: 1px solid #fff;*/
-			padding: 5px;
-		}
-	}
-
-
-	/* =====================================
-		Media Queries for Extra small 
-		Device screens
-	===================================== */
-	@media only screen and (min-width: 380px) and (max-width: 451px) {
-
-		main.wrapper {
-/*			border: 1px solid #fff;*/
-			padding: 10px 10px;
-			width: 100%;
-			overflow-y: auto;
-		}
-
-		.container {
-			text-align: center;
-			width: 100%;
-		}
-
-		.wrapper h1 {
-			text-align: center;
-			font-size: 40px;
-		}
-
-		.container a {
-			width: 80%;
-			padding: 20px 20px;
-		}
-
-		.container .title {
-/*			border: 1px solid #fff;*/
-			padding-bottom: 0;
-		}
-
-		.container .title p {
-/*			border: 1px solid #fff;*/
-			width: 100%;
-			padding: 0;
-		}
-
-		.container .title ol {
-/*			border: 1px solid #fff;*/
-			padding: 1rem 2rem;
-		}
-
-		.container .title ol li{
-/*			border: 1px solid #fff;*/
-			padding: 5px;
-		}		
-	}
-
-
-
-	/* =====================================
-		Media Queries for Extra small 
-		Device screens
-	===================================== */
-	@media only screen and (max-width: 379px) {
-
-		main.wrapper {
-/*			border: 1px solid #fff;*/
-			padding: 10px 10px;
-			width: 100%;
-			overflow-y: auto;
-		}
-
-		.wrapper h1 {
-			font-size: 30px;
-		}
-
-		.container {
-/*			border: 1px solid #fff;*/
-			width: 100%;
-			margin: 0;
-			padding-bottom: 1rem;
-		}
-
-		.container .title {
-/*			border: 1px solid #fff;*/
-			width: 100%;
-/*			margin: 0;*/
-		}
-
-		.container .title h1 {
-/*			border: 1px solid #fff;*/
-
-		}
-
-		.container .title p {
-/*			border: 1px solid #fff;*/
-			font-size: 18px;
-			padding: 10px;
-			text-align: left;
-		}
-
-		.container .title ol {
-/*			border: 1px solid #fff;*/
-			font-size: 14px;
-			padding: 0;
-		}
-
-		.container .title ol li {
-/*			border: 1px solid #fff;*/
-			width: 90%;
-			margin-left: auto;
-			margin-right: 5px;
-			font-size: 14px;
-		}
-
-		.container a {
-/*			width: 60%;*/
-			padding: 20px 20px;
-			margin-top: 1rem;
-		}
-	}
-
-</style>
 </head>
+
+
 <body>
 
 	<main class="wrapper">
-		<h1>Error-404! Page Not Found</h1>
+		<h1>Error 404<br>Page Not Found !</h1>
 
 		<div class="container">
 			<div class="title">
 				<!-- <h1>Error 404</h1> -->
-				<p>Sorry for the inconvenience, the url (webpage) you are looking for is currently unavailable or cannot be reached at this moment due to following probable reasons:</p> 
+				<p>Sorry for the inconvenience, the url (or webpage) you are looking for is currently unavailable or cannot be reached at this moment due to one of the or multiple reasons given below.</p> 
 				<ol type="1">
 					<li>URL is broken or misspelled by user.</li>
 					<!-- <br> -->
-					<li>The webpage is either under maintenance, or some modifications work is under progress.</li>
+					<li>The webpage (or URL) is either undergoing maintenance, or technical modifications are in progress.</li>
 					<!-- <br>  -->
-					<li>Webpage has either been moved, renamed, deleted or there's no redirect setup.</li>
+					<li>Webpage has either been moved, renamed, deleted or non availability of redirect link.</li>
 					<!-- <br> -->
 					<li>The URL has been linked incorrectly by the owner/editor/author.</li>
 					<!-- <br> -->
-					<li>The Domain (DHCP/IP) Server, Database Server or Web Hosting server is undergoing maintenance work or changes.</li>
+					<li>The Domain (DHCP/IP) Server, Database Server or Web Hosting server is undergoing some maintenance work and changes.</li>
 					<!-- <br> -->
-					<li>Either the Domain (DHCP/IP) Server, Database Server or Web-Hosting server is witnessing traffic overload or the malfunction has caused by some miscellaneous unknown anomaly (code bug).</li>
+					<li>Either the Domain (DHCP/IP) Server, Database Server or Web-Hosting server is witnessing traffic overload or any technical malfunction is responsible which causing unavailability of the url/webpage.</li>
+					<!-- <br> -->
+					<li>Miscellaneous unknown anomaly (or code/protocol bug) is most probably causing such unavailability issue.</li>
 				</ol>
 			</div>
 			<!-- <img id="img1" src="404Error2.jpg" alt="Error-404-Page-Not-Found"> -->
 			<!-- <img id="img2" src="Error404PageMobile.png" alt="Error-404-Page-Not-Found"> -->
-			<a href="index.html">return to main page</a>
+			<a href="index.html">Return to main page</a>
 		</div>
 	</main>
 

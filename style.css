@@ -95,13 +95,15 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #eee;
+/*	color: white;*/
+	color: #fff;
+	background: #1e90ff;
 	text-align: center;
 	padding: 10px 2rem;
 	justify-content: center;
 	z-index: 999;
-	opacity: 1.0;
-/*	transition: 0.2s ease;*/
+	opacity: 0.98;
+	transition: 0.3s ease;
 }
 
 
@@ -109,35 +111,34 @@ header h1{
 	border: none;
 /*	border: 1px solid #fff;*/
 	font-family: "Roboto", sans-serif; 
-	color: #333;
+/*	color: #333;*/
 	letter-spacing: 0.9px; 
 	padding: 0;
 	font-size: 40px;
 	margin: 0 0.5rem;
-	transition: 0.2s ease;
+/*	color: #fff;*/
+	transition: 0.4s ease;
 }
 
+header h1 a{
+/*	color: #000;*/
+	font-weight: 500;
+	color: white;
+/*	transition: 0.3s ease;*/
+}
 
 header h1 a:hover{
 	text-decoration: underline;
-	color: blue;
+/*	color: blue;*/
 }
 
-
-header h1 a{
-	color: #000;
-	font-weight: 500;
-/*	transition: 0.2s ease;*/
-}
-	
 header img{
 /*	border: 1px solid #fff;*/
 	width: 60px; 
 	height: 60px;
 	margin: 0 0.5rem;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 } 
-
 
 
 /* ===============================
@@ -150,26 +151,33 @@ header img{
 	width: 100%;
 	padding: 5px 0rem;
 	z-index: 999;
+/*	background: #1e90ff;*/
 	transition: 0.3s ease;
 }
 
 header.fixed h1{
-	font-size: 35px;
-	color: #000;
-/*	transition: 0.2s ease;*/
+/*	font-size: 35px;*/
+	transform: scale(0.9);
+	color: #fff;
+	transition: 0.4s ease;
+}
+
+header.fixed h1 a{
+/*	font-size: 35px;*/
+	color: #fff;
+/*	transition: 0.3s ease;*/
 }
 
 header.fixed img{
-	width: 50px;
-	height: 50px;
-/*	transition: 0.2s ease;*/
+	transform: scale(0.8);
+/*	transition: 0.3s ease;*/
 }
 
 
 /* ================================
 	Main container starts
 ================================ */
-.container {
+.wrapper .container {
 /*	border: 1px solid #fff;*/
 	width: 70%;
 	height: auto;
@@ -178,7 +186,7 @@ header.fixed img{
 	overflow: auto;
 } 
 
-.container h2 {
+.wrapper .container h2 {
 	font-family: "Roboto", sans-serif; 
 	color: #ddd; 
 	letter-spacing: 0.9px; 
@@ -191,18 +199,18 @@ header.fixed img{
 /* ============================
 	View Project BUttons
 ============================ */
-.container a {
+.wrapper .container a {
 /*	border: 0.5px solid rgba(0, 0, 0, 0.4);*/
 	border-radius: 20px;
 	font-family: "Raleway", sans-serif; 
 	color: #fff; 
-	background: dodgerblue;
+	background: #1e90ff;
 	font-size: 16px; 
 	font-weight: 500;
 	letter-spacing: 0.6px;
 /*	padding: 12px 10px;*/
 	width: 150px;
-	padding: 12px 0;
+	padding: 14px 0;
 	display: inline-block;
 	margin-left: 3.5rem;
 	margin-top: 1rem;
@@ -212,18 +220,18 @@ header.fixed img{
 	transition: 0.3s ease;
 } 
 
-.container i {
+.wrapper .container i {
 	color: orangered;
 } 
 
-.container a:hover {
+.wrapper .container a:hover {
 /*	box-shadow: 1px 1px 5px #222;*/
 	background: rgba(255, 255, 255, 0.9);
 	font-weight: 300;
 	color: #000;
 } 
 
-.container a:active {
+.wrapper .container a:active {
 	background: rgba(255, 255, 255, 0.7);
 	color: #000;
 }
@@ -248,12 +256,40 @@ header.fixed img{
 	flex-direction: column;
 }
 
+
+.wrapper footer a.goto-top{
+/*	border: 1px solid black;*/
+	background: #1e90ff;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 0px 1px 4px #444;
+	display: inline-block;
+	padding: 0;
+	transition: 0.3s ease;
+}
+
+
+.wrapper footer a.goto-top i{
+/*	display: block;*/
+}
+
+.wrapper footer a.goto-top:hover{
+	background: #003399;
+}
+
+
+.wrapper footer a.goto-top:active {
+	background: #000;
+}
+
+
 .wrapper footer p {
 /*	border: 1px solid black;*/
 	padding: 10px;
 	width: auto;
 	display: inline-block;
 	letter-spacing: 0.4px;
+	margin-top: 10px;
 }
 
 
@@ -317,15 +353,12 @@ header.fixed img{
 .wrapper footer .social a:hover{
 /*	border: 1px solid black;*/
 /*	background: rgba(0, 0, 0, 0.5);*/
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.6);
 /*	box-shadow: 0px 0px 6px #000;*/
 }
-
 .wrapper footer .social a:active {
 	background: #444;
 }
-
-
 .wrapper footer .social a:visited {
 	color: royalblue;
 }
@@ -334,19 +367,18 @@ header.fixed img{
 .wrapper footer .social a:nth-child(1), .wrapper footer .social a:nth-child(2), .wrapper footer .social a:nth-child(6) {
 	color: royalblue;
 }
-
+.wrapper footer .social a:first-child {
+	color: #003399;
+}
 .wrapper footer .social a:nth-child(3) {
 	color: indianred;
 }
-
 .wrapper footer .social a:nth-child(4) {
 	color: rgba(255, 0, 0, 0.9);
 }
-
 .wrapper footer .social a:nth-child(5) {
-	color: black;
+	color: #009900;
 }
-
 
 
 .wrapper footer h4.contact {
@@ -358,7 +390,6 @@ header.fixed img{
 	padding: 10px;
 	line-height: 1.4;
 }
-
 
 .wrapper footer small {
 /*	border: 1px solid black;*/
@@ -391,12 +422,9 @@ hr.separator {
 @media only screen and (min-width:0) and (max-width: 786px) {
 
 	header {
-	/*	position: sticky;*/
-	/*	top: 0;*/
-	/*	left: 0;*/
 		width: 100%;
 		height: auto; 
-		background: #eee;
+/*		background: #eee;*/
 		text-align: center;
 		padding: 1rem 0 2.5rem;
 		position: relative;
@@ -406,7 +434,7 @@ hr.separator {
 		border: none;
 	/*	border: 1px solid #fff;*/
 		font-family: "Roboto", sans-serif; 
-		color: #333;
+/*		color: #333;*/
 		font-weight: 400; 
 		letter-spacing: 0.9px; 
 		padding: 0;
@@ -451,7 +479,7 @@ hr.separator {
 	/*	left: 0;*/
 		width: 100%;
 		height: auto; 
-		background: #eee;
+/*		background: #eee;*/
 		text-align: center;
 		padding: 1rem 0 1.5rem;
 		position: relative;
@@ -461,7 +489,7 @@ hr.separator {
 		border: none;
 /*		border: 1px solid blue;*/
 		font-family: "Roboto", sans-serif; 
-		color: #333;
+/*		color: #333;*/
 		font-weight: 400; 
 		letter-spacing: 0.9px; 
 		padding: 8px 0;
@@ -492,7 +520,7 @@ hr.separator {
 
 	header.fixed h1{
 		font-size: 35px;
-		color: #000;
+/*		color: #000;*/
 	}
 
 	header.fixed img{
@@ -522,7 +550,7 @@ hr.separator {
 
 	header.fixed h1{
 		font-size: 30px;
-		color: #000;
+/*		color: #000;*/
 		padding: 0;
 	}
 
@@ -552,13 +580,8 @@ hr.separator {
 @media only screen and (max-width: 540px){
 	
 	header {
-	/*	position: sticky;*/
-	/*	top: 0;*/
-	/*	left: 0;*/
 		width: 100%;
-		height: auto; 
-		background: #eee;
-	/*	background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);*/
+		height: auto;
 		text-align: center;
 		padding: 0 0 2.5rem;
 		position: relative;
@@ -567,8 +590,7 @@ hr.separator {
 	header h1 {
 		border: none;
 /*		border: 1px solid #000;*/
-		font-family: "Roboto", sans-serif; 
-		color: #333;
+		font-family: "Roboto", sans-serif;
 		font-weight: bold; 
 		letter-spacing: 0.9px; 
 		padding: 8px 0;
@@ -599,7 +621,6 @@ hr.separator {
 
 	header.fixed h1{
 		font-size: 26px;
-		color: #000;
 		padding: 5px 0;
 		line-height: 1.2;
 	}
@@ -611,16 +632,16 @@ hr.separator {
 		display: none;
 	}
 
-	.container {
+	.wrapper .container {
 		margin-top: 8rem;
 	}
 
-	.container h2{
+	.wrapper .container h2{
 		font-size: 28px;
 		line-height: 1.4;
 	}
 
-	.container a {
+	.wrapper .container a {
 		margin-left: 0;
 	}
 
@@ -643,16 +664,11 @@ hr.separator {
 	Extra Small Screen Media Queries
 ==================================== */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 539px) {
 
 	header {
-	/*	position: sticky;*/
-	/*	top: 0;*/
-	/*	left: 0;*/
 		width: 100%;
 		height: auto; 
-		background: #eee;
-	/*	background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);*/
 		text-align: center;
 		padding: 0 0 1.5rem;
 		position: relative;
@@ -662,7 +678,6 @@ hr.separator {
 		border: none;
 /*		border: 1px solid #000;*/
 		font-family: "Roboto", sans-serif; 
-		color: #333;
 		font-weight: bold; 
 		letter-spacing: 0.9px; 
 		padding: 8px 0;
@@ -682,8 +697,12 @@ hr.separator {
 		margin: 0 0.5rem;
 	}
 
-	.container {
+	.wrapper .container {
 		margin-top: 6rem;
+	}
+
+	.wrapper .container a {
+		margin-left: 0;
 	}
 
 	.fixed{
@@ -698,7 +717,6 @@ hr.separator {
 
 	header.fixed h1{
 		font-size: 26px;
-		color: #000;
 		padding: 5px 0;
 		line-height: 1.2;
 	}
@@ -708,5 +726,50 @@ hr.separator {
 		height: 50px;
 		margin-top: 0.8rem;
 		display: none;
+	}
+
+
+	/* ==================================
+		"Social Media" Icons in footer
+		section
+	================================== */
+	.wrapper footer .social {
+/*		border: 1px solid black;*/
+		display: inline-block;
+		width: auto;
+		margin: auto;
+		margin-top: 10px;
+		padding: 10px 5px;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-flow: wrap;
+		gap: 10px;
+	}
+
+
+	.wrapper footer .social a {
+		border: none;
+	/*	border: 0.5px solid rgba(0, 0, 0, 0.3);*/
+		border-radius: 50px;
+
+	/*	padding: 10px;*/
+		width: 50px;
+		height: 50px;
+
+		display: block;
+		text-decoration: none;
+		font-size: 24px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		box-sizing: border-box;
+		box-shadow: 0px 0px 5px 2px #aaa;
+
+		transition: 0.3s ease;
 	}
 }
