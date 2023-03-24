@@ -287,7 +287,7 @@ header.fixed img{
 	Footer CSS starts
 ============================== */
 .wrapper footer {
-	border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+/*	border-top: 0.5px solid rgba(255, 255, 255, 0.2);*/
 	width: 100%;
 	height: auto;
 	padding: 20px 0 0;
@@ -298,8 +298,8 @@ header.fixed img{
 	color: #fff;
 /*	background: rgba(255, 255, 255, 0.8);*/
 /*	background: #1e90ff;;*/
-	background: rgba(0, 0, 0, 0.1);
-	background-color: transparent;
+	background: rgba(0, 0, 0, 0.6);
+/*	background-color: transparent;*/
 /*	color: #000;*/
 
 	display: flex;
@@ -445,7 +445,7 @@ header.fixed img{
 /*	box-shadow: 0px 0px 6px #000;*/
 }
 .wrapper footer .social a:active {
-	background: #444;
+	background: #ccc;
 }
 .wrapper footer .social a:visited {
 	color: royalblue;
@@ -963,5 +963,14 @@ hr.separator {
 		width: 280px;
 		height: 180px;
 		margin: 0 auto;
+	}
+
+	.wrapper footer .social {
+		border: 1px solid #fff;
+		width: 80%;
+	}
+
+	.wrapper footer .social a {
+		margin: 5px 5px;
 	}
 }
