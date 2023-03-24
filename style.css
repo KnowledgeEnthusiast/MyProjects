@@ -922,21 +922,27 @@ hr.separator {
 @media only screen and (max-width: 410px) {
 
 	.wrapper header {
+
 		padding: 0;
 		margin: 0;
 	}
 
 	.wrapper header h1 {
+/*		border: 1px solid black;*/
 		font-size: 24px;
 		padding: 10px 0;
+		line-height: 1.2;
 	}
 
 	.wrapper header.fixed {
-		padding: 0px;
+		padding: 0;
+		margin: 0;
 	}
 
-	.wrapper header h1 {
-		padding: 10px 0;
+	.wrapper header.fixed h1 {
+		transform: scale(0.8);
+		padding: 0;
+		margin: 0;
 	}
 
 	.wrapper .container {
